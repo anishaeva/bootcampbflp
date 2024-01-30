@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(231, 227, 227);
+}
+
+.topnav {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    text-align: right;
+    padding: 18px;
+}
+
+.topnav a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px;
+    color: #595959;
+}
+
+.flex-container {
+    background-color: white;
+    display: flex;
+    border-style: groove;
+    margin: 10px;
+}
+  
+.flex-container div {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex-container h2 {
+    margin: 0;
+}
+
+.flex-container p {
+    font-size: 13px;
+}
+
+.kontak {
+    background: blue;
+    color: white;
+    padding: 10px;
+}
+
+.resume {
+    background: rgb(207, 207, 207);
+    color: black;
+    padding: 10px;
+}
+
+.datadefault {
+    font-weight: bold;
+}
+
+.data1 div {
+    margin: 0;
+}
+
+.wrapper {
+    margin-top: 20px;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 10px;
+}
+
+#profile-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.submit {
+    margin-top: 10px;
+    background-color: green;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}

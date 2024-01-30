@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <br>
+        <link rel="stylesheet" href="challenged2.css">
+</head>
+<body class="bodytes">
+    <div class="topnav">
+        <a href="HOME">HOME</a>
+        <a href="PRODUCT">PRODUCT</a>
+        <a href="GALLERY">GALLERY</a>
+        <a href="BLOG">BLOG</a>
+        <a href="INVENTORY"> MY INVENTORY</a>
+    </div>
+
+    <div class="flex-container">
+        <div><img src="./avatar.png" alt="" width="200" height="200"></div>
+        <div>
+            <h2 id="name">Nama Anda</h2>
+            <p id="role">Front End Developer</p>
+            <br><br>
+            <div>
+                <button class="kontak">Kontak</button>
+                <button class="resume">Resume</button>
+            </div>
+        </div>
+        <div class="data1 datadefault">
+            <div>Availability</div>
+            <div>Usia</div>
+            <div>Lokasi</div>
+            <div>Pengalaman</div>
+            <div>Email</div>
+        </div>
+        <div class="data1">
+            <div id="availability">Full Time</div>
+            <div id="age">17 Tahun</div>
+            <div id="location">Jakarta, Indonesia</div>
+            <div id="experience">2 Tahun</div>
+            <div id="email">email@email.com</div>
+        </div>
+    </div>
+
+
+    <section class="wrapper">
+        <form action="" class="row" id="profile-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="nameForm">
+        
+            <label for="role">Role:</label>
+            <input type="text" name="role" id="roleForm">
+
+            <label for="availability">Availability:</label>
+            <input type="text" name="availability" id="availabilityForm">
+
+            <label for="age">Usia:</label>
+            <input type="text" name="age" id="ageForm">
+
+            <label for="location">Lokasi:</label>
+            <input type="text" name="location" id="locationForm">
+
+            <label for="experience">Pengalaman:</label>
+            <input type="text" name="experience" id="experienceForm">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="emailForm">
+        </form>
+
+        <button type="button" class="submit" id="submitForm" onclick="submitForm()"> Submit </button>
+    </section>
+   <br>
+   <script src="challenged2.js"></script>
+</body>
+</html>
