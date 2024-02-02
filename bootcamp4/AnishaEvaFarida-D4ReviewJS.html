@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Javascript</title>
+</head>
+
+<body>
+  <h3>Review Javascript</h3>
+
+  <button type="button" class="date" id="date" onclick="todayDate()"> Whats the date? </button>
+  <h6 id="datenow"></h6>
+
+  <script>
+    //
+    //Exercise 1
+    let var1 = "";
+    const var2 = "";
+
+    const fruits = ["mango", "avocado", "pear", "watermelon"];
+    console.log(fruits);
+
+    fruits.push("melon");
+    console.log(fruits);
+
+    fruits[2] = "durian";
+    console.log(fruits);
+
+    fruits.pop();
+    console.log(fruits);
+
+    //
+    //Exercise 2
+    const myself = {
+      front_name: "Anisha",
+      last_name: "Eva Farida",
+      hobbies: ["travelling", "listen to music"],
+      number: 13,
+      use_sunglasses: true,
+    };
+
+    console.log(myself);
+
+    const fullName = myself.front_name + " " + myself.last_name;
+    console.log(fullName);
+
+    const favNumber = 8;
+    console.log(favNumber);
+
+    myself.hobbies.push("sleep");
+    console.log(myself);
+
+    myself.lulusan = "Hactiv8";
+    console.log(myself);
+
+    for (let i = 0; i <= myself.hobbies.length; i++) {
+      console.log(myself.hobbies[i]);
+    }
+
+    for (const key in myself) {
+      console.log(key);
+    }
+
+    for (const key in myself) {
+      console.log(myself[key]);
+    }
+
+    for (const key in myself) {
+      console.log(`${key}: ${myself[key]}`);
+    }
+   
+    //
+    //Exercise 3
+    const date1 = document.getElementById("datenow");
+
+    function todayDate() {
+      date1.textContent = new Date().toDateString();
+    }
+    
+    function dateNow(){
+      return new Date().toDateString();
+    }
+    let today = dateNow();
+    console.log(today);
+
+    //
+    // Exercise 4
+    function checkNumber(number) {
+      if (Number.isInteger(number)) {
+        if (number % 2 == 1) {
+          return "ganjil";
+        } else {
+          return "genap";
+        }
+      } else {
+        return "bukan angka";
+      }
+    }
+    console.log(checkNumber(2));
+    console.log(checkNumber(3));
+    console.log(checkNumber(20));
+    console.log(checkNumber(21));
+
+  </script>
+</body>
+
+</html>
