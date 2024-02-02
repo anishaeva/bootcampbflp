@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Challenge Array</title>
+</head>
+
+<body>
+  <h3>Challenge Array</h3>
+  <script>
+    // Challenge 1
+    const myArray = [];
+
+    myArray.push("apple");
+    myArray.push("banana");
+    myArray.pop();
+    myArray.push("orange");
+    myArray.pop();
+
+    console.log(myArray);
+
+    //
+    // Challenge 2
+    const firstArray = [];
+    const secondArray = [];
+
+    firstArray.push("folklore", "lover");
+    secondArray.push("midnights", "fearless");
+
+    const combineArray = firstArray.concat(secondArray);
+
+    console.log(combineArray);
+
+    const combineArray2 = combineArray.join(", ");
+
+    console.log(combineArray2);
+
+    //
+    // Challenge 3
+    const numbers = [9, 6, 5, 12, 97, 18, 13];
+
+    console.log(numbers.sort((a, b) => (a - b)));
+    console.log(numbers.sort((a, b) => (b - a)));
+
+    //
+    // Challenge 4
+    const fruits = ["apple", "banana", "orange", "grape", "kiwi"];
+
+    fruits.splice(1, 2);
+    console.log(fruits);
+
+    //
+    // Challenge 5
+    const sentence = "Hello,World,Javascript";
+    const sentenceArray = sentence.split(',');
+
+    console.log(sentenceArray);
+
+
+
+  </script>
+</body>
+
+</html>

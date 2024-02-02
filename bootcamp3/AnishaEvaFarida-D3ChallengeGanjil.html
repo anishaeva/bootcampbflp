@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perulangan Javascript 2 (Urutan Orang)</title>
+</head>
+
+<body>
+  <h3>Perulangan Javascript 2 (Urutan Ganjil)</h3>
+  <script>
+    for (var incrementNumber = 1; incrementNumber <= 120; incrementNumber++) {
+      let textShowed = "";
+      if (incrementNumber % 2 == 1) {
+        let i = 1;
+        while (i <= 100) {
+          textShowed = textShowed + 'O';
+          i++;
+        }
+      }
+      else {
+        textShowed = " ";
+        let i = 1;
+        while (i <= 100) {
+          textShowed = textShowed + ' ';
+          i++;
+        }
+      }
+      console.log(textShowed);
+    } 
+  </script>
+</body>
+
+</html>

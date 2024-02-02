@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kondisional Javascript 2 (Score)</title>
+</head>
+
+<body>
+  <h3>Kondisional Javascript 2 (Score)</h3>
+  <script>
+    for (;;) {
+    const inputUser = parseInt(prompt("Masukan nilai dengan interval 1 - 100"));
+
+    if (inputUser >= 80 && inputUser <= 100) {
+      alert("Your Grade is A");
+    } else if (inputUser >= 60 && inputUser < 80) {
+      alert("Your Grade is B");
+    } else if (inputUser >= 40 && inputUser < 60) {
+      alert("Your Grade is C");
+    } else if (inputUser < 40 && inputUser >= 0) {
+      alert("Your Grade is D");
+    } else {
+      alert("Can't Calculate Your Grade");
+    }
+  }
+  </script>
+</body>
+
+</html>
